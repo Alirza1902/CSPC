@@ -1,0 +1,12 @@
+rule all:
+    input:
+        "figure.png"
+
+rule plot:
+    input:
+        script="plot.py",
+        data="decay_observed.csv"
+    output:
+        "figure.png"
+    shell:
+        "python {input.script}"
