@@ -38,3 +38,12 @@ decay.
 The Snakemake pipeline (Snakefile) automates the generation of figure.png from 
 decay_observed.csv by running plot.py, and only reruns the plotting step when the 
 input data or script has changed.
+## PW2 --- Lab A
+
+The mean acceleration I measured from the free-fall data was -8.58 m/s^2, roughly consistent with -g, confirming the object is in free fall.
+
+The acceleration is very noisy (large standard deviation) because differentiation divides the difference of nearby noisy measurements by a small time step (0.1 s), so noise is amplified, and taking two derivatives amplifies it twice, which makes the acceleration swing wildly while the position looks smooth.
+
+The standard deviation of the acceleration was about 28.7 m/s^2, far larger than g itself.
+
+Integrating the noisy acceleration back up recovered the position to within 0.78 m of the measured values (at most), because integration is a smoothing operation that suppresses noise, the opposite of differentiation.
