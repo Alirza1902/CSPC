@@ -36,7 +36,11 @@ decay.
 The Snakemake pipeline (Snakefile) automates the generation of figure.png from 
 decay_observed.csv by running plot.py, and only reruns the plotting step when the 
 input data or script has changed.
+<<<<<<< HEAD
 # PW2 --- Lab A
+=======
+## PW2 --- Lab A
+>>>>>>> 8e269a40d6d9b0cd4ad38cde2ce82e5a38ab3732
 
 The mean acceleration I measured from the free-fall data was -8.58 m/s^2, roughly consistent with -g, confirming the object is in free fall.
 
